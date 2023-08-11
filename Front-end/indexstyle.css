@@ -22,6 +22,11 @@ body {
     float: right;
 }
 
+.horizontal-bar #signup {
+    background-color: #04AA6D;
+    float: right;
+}
+
 .horizontal-bar li a {
     display: block;
     color: white;
