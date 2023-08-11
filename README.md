@@ -25,8 +25,11 @@ As a budding web developer, my main objectives for this project are:
 ## Progress 
 
 👨‍💻 Front-end
+
 ⬛ Back-end
+
 ⬛ Fron-end and Back-end connection
+
 ⬛ Deployment
 
 ## Contributions
