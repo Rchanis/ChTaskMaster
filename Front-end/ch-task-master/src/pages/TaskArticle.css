@@ -1,0 +1,23 @@
+.task {
+    margin-top: 6%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1%;
+    background-color: #f7f7f7;
+    padding: 2%;
+}
+
+.task div {
+    display: flex;
+    justify-content: space-between
+}
+
+.task .state {
+    display: inline;
+}
+
+.task .date-task {
+    display: inline;
+}
