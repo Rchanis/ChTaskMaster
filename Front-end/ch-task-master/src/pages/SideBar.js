@@ -3,7 +3,7 @@ import "./SideBar.css";
 const SideBar = () => {
     return (
         <>
-            <nav class="vertical-bar">
+            <nav className="vertical-bar">
                 <ul>
                     <li><a href="#Doing">Doing</a></li>
                     <li><a href="#Todo">Todo</a></li>

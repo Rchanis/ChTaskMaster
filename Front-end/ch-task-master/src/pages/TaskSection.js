@@ -1,16 +1,21 @@
 import TaskArticle from "./TaskArticle";
 import "./TaskSection.css";
+import { useSelector } from "react-redux";
 
-const TaskSection = () => {
+const TaskSection = (props) => {
+    const state = useSelector((state) => state);
+    console.log(state);
     return (
         <>
-            <section class="task-section">
+            <section className="task-section">
                 <h3>
-                    Doing
+                    {props.title}
                 </h3>
-                <TaskArticle/>
-                <TaskArticle/>
-                <TaskArticle/>
+                {state.tasks.map((task) => (
+                    <TaskArticle key={task.id} title={task.title} description={task.description}/>
+                ))}
+
+                {console.log(state)}
             </section>
         </>
     )

@@ -4,7 +4,7 @@ import "./Layout.css";
 const Layout = () => {
     return (
         <>
-            <nav class="horizontal-bar">
+            <nav className="horizontal-bar">
                 <ul>
                     <li>
                         <a href="#github">Logo</a>

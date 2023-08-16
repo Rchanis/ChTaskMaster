@@ -13,7 +13,7 @@ const Login = () => {
                         <input type="password" name="password" id="password" />
                     </label>
                     <input type="submit" value="Log in" />
-                    <div class="forgotPassword">
+                    <div className="forgotPassword">
                         <a href="#fogotPassword">Forgot password?</a>
                     </div>
                 </form>

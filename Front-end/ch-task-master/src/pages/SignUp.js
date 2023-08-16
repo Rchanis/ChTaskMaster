@@ -22,7 +22,7 @@ const SignUp = () => {
                         <input type="password" name="cpassword" id="cpassword" required />
                     </label>
                     <input type="submit" value="Sign up" />
-                    <div class="forgotPassword">
+                    <div className="forgotPassword">
                         <a href="/login.html">Already sign up?</a>
                     </div>
                 </form>

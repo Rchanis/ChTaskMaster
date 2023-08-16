@@ -1,91 +1,64 @@
 {
-    "isLoged":false,
-    "tasks":{
-        "done":[
-            {
-                "title": "a title",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "done",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            },
-            {
-                "title": "a title",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "done",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            },
-            {
-                "title": "a title",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "done",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            }
-        ],
-        "doing":[
-            {
-                "title": "a title of a doing task",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "doing",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            },
-            {
-                "title": "a title of a doing task",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "doing",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            },
-            {
-                "title": "a title of a doing task",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "doing",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            },
-            {
-                "title": "a title of a doing task",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "doing",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            }
-        ],
-        "todo":[
-            {
-                "title": "a title of a todo task",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "doing",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            },
-            {
-                "title": "a title of a todo task",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "doing",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            },
-            {
-                "title": "a title of a todo task",
-                "description": "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-                "state": "doing",
-                "createAt": "2018-01-10T06:14:00Z",
-                "lastChange": "2018-01-10T06:14:00Z",
-                "doTime": "2018-02-10T06:14:00Z"
-            }
-        ]
+  "uuid": "bd68cfed-a315-479b-9408-83e9c9ecc6b7",
+  "lastMigration": 28,
+  "name": "New environment",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "ce77ef33-98c2-48c6-8650-a7a8f452592b"
     }
+  ],
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "ce77ef33-98c2-48c6-8650-a7a8f452592b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "tasks",
+      "responses": [
+        {
+          "uuid": "ae1f0201-ba7c-4dd6-876a-8fb5eb62be08",
+          "body": "[\n  {{#repeat 10}}\n    {\n      \"id\": {{faker 'datatype.number'}},\n      \"title\": \"{{faker 'lorem.sentence'}}\",\n      \"state\": \"done\",\n      \"createdAt\": \"{{faker 'date.past'}}\",\n      \"updatedAt\": \"{{faker 'date.past'}}\",\n      \"doAt\": \"{{faker 'date.future'}}\",\n      \"isActive\": {{faker 'datatype.boolean'}}\n    } \n    {{#unless @last}},{{/unless}}\n  {{/repeat}}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [],
+  "proxyReqHeaders": [],
+  "proxyResHeaders": [],
+  "data": []
 }

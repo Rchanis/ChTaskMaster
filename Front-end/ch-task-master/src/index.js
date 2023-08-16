@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from "./store";
 import reportWebVitals from './reportWebVitals';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -11,13 +13,15 @@ import SignUp from "./pages/SignUp";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />}/>
-        <Route path="login" element={<Login />}/>
-        <Route path="signup" element={<SignUp />}/>
-      </Route>
-    </Routes>
+    <Provider store={store}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
+        </Route>
+      </Routes>
+    </Provider>
   </BrowserRouter>
 );
 
