@@ -1,14 +1,18 @@
 import "./SideBar.css";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
+    const state = useSelector((state) => state);
     return (
         <>
             <nav className="vertical-bar">
                 <ul>
-                    <li><a href="#Doing">Doing</a></li>
-                    <li><a href="#Todo">Todo</a></li>
-                    <li><a href="#Done">Done</a></li>
-                    <li id="newTask"><a href="/createTask.html">Add new task &#10133</a></li>
+                    {/* map the tasks sections */}
+                    {Object.keys(state.tasks).map((taskSection) => (
+                        <li key={taskSection.id}>{taskSection}</li>
+                    ))}
+                    <li id="newTask"><Link to="/createTask">Add new task &#10133</Link></li>
                 </ul>
             </nav>
         </>

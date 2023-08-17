@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from "./store";
 import reportWebVitals from './reportWebVitals';
@@ -8,19 +8,21 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import CreateTask from "./pages/CreateTask";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Provider store={store}>
-      <Routes>
+      <Router>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
+          <Route path="createTask" element={<CreateTask />} />
         </Route>
-      </Routes>
+      </Router>
     </Provider>
   </BrowserRouter>
 );

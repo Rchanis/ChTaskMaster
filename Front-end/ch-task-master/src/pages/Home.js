@@ -11,8 +11,9 @@ const Home = () => {
         <>
             <SideBar/>
             <div className="tasks">
-                <TaskSection title="tasks"/>
-                
+                {Object.keys(state.tasks).map((taskState) => (
+                    <TaskSection title={taskState}/>
+                ))}
             </div>
 
             <Outlet />
