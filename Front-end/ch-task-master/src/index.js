@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from "./configureStore";
+import { store, persistor } from "./configureStore";
+import { PersistGate } from 'redux-persist/integration/react';
 import reportWebVitals from './reportWebVitals';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -15,14 +16,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Provider store={store}>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="createTask" element={<CreateTask />} />
-        </Route>
-      </Routes>
+      <PersistGate loading={null} persistor={persistor}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<SignUp />} />
+            <Route path="createTask" element={<CreateTask />} />
+          </Route>
+        </Routes>
+      </PersistGate>
     </Provider>
   </BrowserRouter>
 );
